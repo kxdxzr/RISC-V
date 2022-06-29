@@ -5,6 +5,6 @@ Do not use the multiplication and division function. They are not done yet.
 
 ## Built function: 
 ALU_ADD ALU_SLL ALU_SLT ALU_SLTU ALU_XOR ALU_OR ALU_AND ALU_SRA ALU_SRL ALU_SLL ALU_SLT ALU_SLTU ALU_XOR ALU_SRA ALU_SRL ALU_OR ALU_AND  
-JAL JALR SWITCH 
-LUI LOAD  
+JAL JALR  
+LUI LOAD STORE   
 AUIPC  
