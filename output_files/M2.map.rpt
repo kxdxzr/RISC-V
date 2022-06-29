@@ -1,0 +1,258 @@
+Analysis & Elaboration report for M2
+Wed Oct 20 19:33:55 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Failed - Wed Oct 20 19:33:55 2021           ;
+; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                 ; M2                                          ;
+; Top-level Entity Name         ; Lab_Assign                                  ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; Lab_Assign         ; M2                 ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Wed Oct 20 19:33:41 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off M2 -c M2 --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file interme5_control.vhd
+    Info (12022): Found design unit 1: interme5_control-rtl File: F:/model/M2/interme5_control.vhd Line: 22
+    Info (12023): Found entity 1: interme5_control File: F:/model/M2/interme5_control.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file regfile.vhd
+    Info (12022): Found design unit 1: regfile-rtl File: F:/model/M2/regfile.vhd Line: 29
+    Info (12023): Found entity 1: regfile File: F:/model/M2/regfile.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file lab_assign_tb.vhd
+    Info (12022): Found design unit 1: Lab_Assign_tb-behavioral File: F:/model/M2/Lab_Assign_tb.vhd Line: 11
+    Info (12023): Found entity 1: Lab_Assign_tb File: F:/model/M2/Lab_Assign_tb.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file lab_assign.vhd
+    Info (12022): Found design unit 1: Lab_Assign-behavioral File: F:/model/M2/Lab_Assign.vhd Line: 16
+    Info (12023): Found entity 1: Lab_Assign File: F:/model/M2/Lab_Assign.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file interme4_control.vhd
+    Info (12022): Found design unit 1: interme4_control-rtl File: F:/model/M2/interme4_control.vhd Line: 22
+    Info (12023): Found entity 1: interme4_control File: F:/model/M2/interme4_control.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file interme3_control.vhd
+    Info (12022): Found design unit 1: interme3_control-rtl File: F:/model/M2/interme3_control.vhd Line: 22
+    Info (12023): Found entity 1: interme3_control File: F:/model/M2/interme3_control.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file interme2_control.vhd
+    Info (12022): Found design unit 1: interme2_control-rtl File: F:/model/M2/interme2_control.vhd Line: 22
+    Info (12023): Found entity 1: interme2_control File: F:/model/M2/interme2_control.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file interme1_control.vhd
+    Info (12022): Found design unit 1: interme1_control-rtl File: F:/model/M2/interme1_control.vhd Line: 22
+    Info (12023): Found entity 1: interme1_control File: F:/model/M2/interme1_control.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file interme_reg_imm.vhd
+    Info (12022): Found design unit 1: interme_reg_imm-rtl File: F:/model/M2/interme_reg_imm.vhd Line: 22
+    Info (12023): Found entity 1: interme_reg_imm File: F:/model/M2/interme_reg_imm.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file interme_reg.vhd
+    Info (12022): Found design unit 1: interme_reg-rtl File: F:/model/M2/interme_reg.vhd Line: 22
+    Info (12023): Found entity 1: interme_reg File: F:/model/M2/interme_reg.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file imem.vhd
+    Info (12022): Found design unit 1: imem-behavioral File: F:/model/M2/imem.vhd Line: 14
+    Info (12023): Found entity 1: imem File: F:/model/M2/imem.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file dmem.vhd
+    Info (12022): Found design unit 1: dmem-behavioral File: F:/model/M2/dmem.vhd Line: 18
+    Info (12023): Found entity 1: dmem File: F:/model/M2/dmem.vhd Line: 8
+Info (12021): Found 2 design units, including 0 entities, in source file common.vhd
+    Info (12022): Found design unit 1: common File: F:/model/M2/common.vhd Line: 6
+    Info (12022): Found design unit 2: common-body File: F:/model/M2/common.vhd Line: 88
+Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
+    Info (12022): Found design unit 1: alu-behavioral File: F:/model/M2/alu.vhd Line: 14
+    Info (12023): Found entity 1: alu File: F:/model/M2/alu.vhd Line: 7
+Info (12127): Elaborating entity "Lab_Assign" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at Lab_Assign.vhd(354): signal "pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/model/M2/Lab_Assign.vhd Line: 354
+Warning (10492): VHDL Process Statement warning at Lab_Assign.vhd(361): signal "regwrite" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/model/M2/Lab_Assign.vhd Line: 361
+Warning (10492): VHDL Process Statement warning at Lab_Assign.vhd(387): signal "regwrite" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/model/M2/Lab_Assign.vhd Line: 387
+Warning (10492): VHDL Process Statement warning at Lab_Assign.vhd(392): signal "regwrite" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/model/M2/Lab_Assign.vhd Line: 392
+Warning (10492): VHDL Process Statement warning at Lab_Assign.vhd(422): signal "regwrite" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/model/M2/Lab_Assign.vhd Line: 422
+Info (10041): Inferred latch for "alu_A[0]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[1]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[2]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[3]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[4]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[5]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[6]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[7]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[8]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[9]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[10]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[11]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[12]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[13]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[14]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[15]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[16]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[17]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[18]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[19]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[20]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[21]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[22]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[23]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[24]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[25]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[26]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[27]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[28]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[29]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[30]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (10041): Inferred latch for "alu_A[31]" at Lab_Assign.vhd(306) File: F:/model/M2/Lab_Assign.vhd Line: 306
+Info (12128): Elaborating entity "alu" for hierarchy "alu:alu0" File: F:/model/M2/Lab_Assign.vhd Line: 167
+Info (12128): Elaborating entity "imem" for hierarchy "imem:imem0" File: F:/model/M2/Lab_Assign.vhd Line: 173
+Error (10324): VHDL Expression error at imem.vhd(20): expression "("00000000101000000010100000100011","00000000000000000010101000100011","00000000000000000010110000100011","00000000000000001000000001100111","00000000000000000000000000010011","00000001000000000010011110000011","00000000110101111001010100010011","00000000111101010100010100110011","00000001001101010101010100010011","00000000110001111001011110010011","11111111111111111110011010110111","00000000110101111111011110110011","00000000111101010100010100110011","00000000101000000010100000100011","00000001010000000010011110000011","00000000001001111001011100010011","00000000111101110100011100110011","00000001100101110101011100010011","00000000010001111001011110010011","11111000000001111111011110010011","00000000111101110100011100110011","00000000111000000010101000100011","00000001100000000010011110000011","00000000001101111001011010010011","00000000111101101100011010110011","00000000101101101101011010010011","00000001000101111001011110010011","11111111111000000000010110110111","00000000101101111111011110110011","00000000110101111100011110110011","00000000111100000010110000100011","00000000111001010100010100110011","00000000111101010100010100110011","00000000000000001000000001100111","00000000000000000000000000010011","11111111000000010000000100010011","00000000000000000000000000010011","00000000000100010010011000100011","00000000100000010010010000100011","00000000100100010010001000100011","00000001001000010010000000100011","00011100100111110000010100110111","01111001001001010000010100010011","11110000010111111111000011101111","00000000000000000000000000010011","00000000000000000000010000010011","00000001010000000000010010010011","11110000100111111111000011101111","00000000000000000000000000010011","00000000000001010000011000010011","00000000000001000000010110010011","00000000000101000000010000010011","00000000000000000000000000010011","11111110100101000001001011100011","00000000000000000000000000010011","00000000000000000000010100010011","00000000110000010010000010000011","00000000100000010010010000000011","00000000010000010010010010000011","00000000000000010010100100000011","00000001000000010000000100010011","00000000000000001000000001100111","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011","00000000000000000000000000010011")" has 130 elements ; expected 128 elements. File: F:/model/M2/imem.vhd Line: 20
+Error (12152): Can't elaborate user hierarchy "imem:imem0" File: F:/model/M2/Lab_Assign.vhd Line: 173
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 2 errors, 6 warnings
+    Error: Peak virtual memory: 4824 megabytes
+    Error: Processing ended: Wed Oct 20 19:33:55 2021
+    Error: Elapsed time: 00:00:14
+    Error: Total CPU time (on all processors): 00:00:31
+
+
